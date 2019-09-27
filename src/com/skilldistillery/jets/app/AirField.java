@@ -13,17 +13,21 @@ public class AirField {
 	}
 
 
-
 	public List<Jet> getJets() {
 		return jets;
 	}
-
-
-
+	
+	
+	
+	
+	
+	
 	public void setJets(List<Jet> jets) {
 		this.jets = jets;
 	}
+	
 
+	
 
 
 	@Override
@@ -70,10 +74,12 @@ public class AirField {
 		return builder.toString();
 	}
 
-	
 
-	
-	
-	
+
+
+
+
 
 }
+
+	
