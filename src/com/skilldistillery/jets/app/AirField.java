@@ -6,29 +6,17 @@ import java.util.List;
 public class AirField {
 	private List<Jet> jets;
 
-	
-	
 	public AirField() {
 		jets = new ArrayList<Jet>();
 	}
 
-
 	public List<Jet> getJets() {
 		return jets;
 	}
-	
-	
-	
-	
-	
-	
+
 	public void setJets(List<Jet> jets) {
 		this.jets = jets;
 	}
-	
-
-	
-
 
 	@Override
 	public int hashCode() {
@@ -37,8 +25,6 @@ public class AirField {
 		result = prime * result + ((jets == null) ? 0 : jets.hashCode());
 		return result;
 	}
-
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -59,27 +45,6 @@ public class AirField {
 
 
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("AirField [jets=");
-		builder.append(jets);
-		builder.append(", getJets()=");
-		builder.append(getJets());
-		builder.append(", hashCode()=");
-		builder.append(hashCode());
-		builder.append(", getClass()=");
-		builder.append(getClass());
-		builder.append("]");
-		return builder.toString();
-	}
-
-
-
-
-
 
 
 }
-
-	

@@ -45,28 +45,6 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("CargoPlane [hashCode()=");
-		builder.append(hashCode());
-		builder.append(", getModel()=");
-		builder.append(getModel());
-		builder.append(", getSpeed()=");
-		builder.append(getSpeed());
-		builder.append(", getRange()=");
-		builder.append(getRange());
-		builder.append(", getPrice()=");
-		builder.append(getPrice());
-		builder.append(", getClass()=");
-		builder.append(getClass());
-		builder.append(", toString()=");
-		builder.append(super.toString());
-		builder.append("]");
-		return builder.toString();
-	}
-
-
 
 	
 

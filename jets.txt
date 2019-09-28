@@ -1,6 +1,6 @@
-CargoPlane, C-130 Hercules, 336, 2360, 30100000
 FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
 CargoPlane, C-130 Hercules, 336, 2360, 30100000
 FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
+CargoPlane, C-130 Hercules, 336, 2360, 30100000
 CargoPlane, C-130 Hercules, 336, 2360, 30100000
 FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
