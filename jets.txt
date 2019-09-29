@@ -1,6 +1,9 @@
-FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
-CargoPlane, C-130 Hercules, 336, 2360, 30100000
-FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
-CargoPlane, C-130 Hercules, 336, 2360, 30100000
-CargoPlane, C-130 Hercules, 336, 2360, 30100000
-FighterJet, F-18 Super Hornet, 1190, 1275, 70500000
+CargoPlane, C-5M Super Galaxy, 518.0, 5500, 100370000
+FighterJet, F-18 Super Hornet, 1190.0, 1275, 70500000
+CargoPlane, C-5M Super Galaxy, 518.0, 5500, 100370000
+CargoPlane, C-130 Hercules, 336.0, 2020, 70000000
+JetImpl, Boeing 747, 614.0, 8357, 147000000
+FighterJet, F-14 Tomcat, 1570.0, 2300, 134000000
+CargoPlane, C-500, 234.0, 4321, 32000000
+JetImpl, Cessna 172, 134.0, 1000, 132000
+FighterJet, F-15 Eagle, 2154.0, 2389, 143000000

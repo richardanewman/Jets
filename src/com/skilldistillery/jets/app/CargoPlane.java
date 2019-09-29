@@ -12,14 +12,16 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public void loadCargo() {
-		// TODO Auto-generated method stub
+		System.out.println("Sir, the airmen are loading cargo on " + getModel() + " as we speak.");
 
 	}
 
 	@Override
 	public void fly() {
+		System.out.println("Sir, cargo plane " + getModel() + " is in the air.");
 		double time = getRange()/getSpeed();
-		System.out.println("Flight time for " + getModel() + " is " + time);
+		System.out.printf("Flight time for " + getModel() + " is %.2f", time);
+		System.out.println(" hours without a reserve tank." );
 
 	}
 
@@ -42,6 +44,12 @@ public class CargoPlane extends Jet implements CargoCarrier {
 			return false;
 		return true;
 	}
+
+
+
+	
+
+	
 
 
 

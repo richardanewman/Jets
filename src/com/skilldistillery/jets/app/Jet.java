@@ -56,6 +56,22 @@ public abstract class Jet {
 	
 	}
 
+
+	@Override
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append(getClass().getSimpleName());
+		builder.append(", ");
+		builder.append(model);
+		builder.append(", ");
+		builder.append(speed);
+		builder.append(", ");
+		builder.append(range);
+		builder.append(", ");
+		builder.append(price);
+		return builder.toString();
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -92,20 +108,11 @@ public abstract class Jet {
 		return true;
 	}
 
-	@Override
-	public String toString() {
-		StringBuilder builder = new StringBuilder();
-		builder.append("Jet [model=");
-		builder.append(model);
-		builder.append(", speed=");
-		builder.append(speed);
-		builder.append(", range=");
-		builder.append(range);
-		builder.append(", price=");
-		builder.append(price);
-		builder.append("]");
-		return builder.toString();
-	}
+	
+
+	
+
+	
 	
 	
 	

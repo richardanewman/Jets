@@ -17,6 +17,16 @@ public class AirField {
 	public void setJets(List<Jet> jets) {
 		this.jets = jets;
 	}
+	
+	public void addNewJet(Jet newJet) {
+		jets.add(newJet);
+	}
+	
+	public void removeJet(int index) {
+		jets.remove(index);
+	}
+	
+	
 
 	@Override
 	public int hashCode() {
@@ -42,6 +52,11 @@ public class AirField {
 			return false;
 		return true;
 	}
+
+	
+
+	
+	
 
 
 

@@ -12,14 +12,17 @@ public class FighterJet extends Jet implements CombatReady {
 	
 	@Override
 	public void fight() {
-		// TODO Auto-generated method stub
+		System.out.println("Sir, the " + getModel() + " is equipped and ready for a dogfight!");
+		
 
 	}
 
 	@Override
 	public void fly() {
+		System.out.println("Sir, fighter jet " + getModel() + " is in the air.");
 		double time = getRange()/getSpeed();
-		System.out.println("Flight time for " + getModel() + " is " + time);
+		System.out.printf("Flight time for " + getModel() + " is %.2f", time);
+		System.out.println(" hours without a reserve tank." );
 
 	}
 
@@ -40,6 +43,9 @@ public class FighterJet extends Jet implements CombatReady {
 			return false;
 		return true;
 	}
+
+
+
 
 	
 	
