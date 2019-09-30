@@ -325,37 +325,6 @@ public class JetsApplication {
 		
 	}
 
-	@Override
-	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((airField == null) ? 0 : airField.hashCode());
-		result = prime * result + ((scanner == null) ? 0 : scanner.hashCode());
-		return result;
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		JetsApplication other = (JetsApplication) obj;
-		if (airField == null) {
-			if (other.airField != null)
-				return false;
-		} else if (!airField.equals(other.airField))
-			return false;
-		if (scanner == null) {
-			if (other.scanner != null)
-				return false;
-		} else if (!scanner.equals(other.scanner))
-			return false;
-		return true;
-	}
-
 	
 	//Stretch Goals
 	private void superSecretMenu() {
