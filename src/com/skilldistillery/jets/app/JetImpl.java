@@ -1,6 +1,6 @@
 package com.skilldistillery.jets.app;
 
-public class JetImpl extends Jet {
+public class JetImpl extends Jet implements StretchGoals {
 
 
 	public JetImpl(String model, double speed, int range, long price) {
@@ -33,6 +33,32 @@ public class JetImpl extends Jet {
 		if (getClass() != obj.getClass())
 			return false;
 		return true;
+	}
+
+	@Override
+	public void flySolo() {
+		System.out.println("You know the super secret password and could've flown badass military aircraft");
+		System.out.println("but you picked a " + getModel() + ". No! Go back and pick a different plane.");
+		
+		
+	}
+
+	@Override
+	public void assignPilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void hirePilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void jetPilotInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 	
 	

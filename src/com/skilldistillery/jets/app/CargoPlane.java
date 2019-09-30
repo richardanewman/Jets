@@ -1,6 +1,6 @@
 package com.skilldistillery.jets.app;
 
-public class CargoPlane extends Jet implements CargoCarrier {
+public class CargoPlane extends Jet implements CargoCarrier, StretchGoals {
 
 
 	public CargoPlane(String model, double speed, int range, long price) {
@@ -45,6 +45,40 @@ public class CargoPlane extends Jet implements CargoCarrier {
 		if (getClass() != obj.getClass())
 			return false;
 		return true;
+	}
+
+
+
+	@Override
+	public void flySolo() {
+		System.out.println("Flying solo in " + getModel() + ". That's right big boy of the sky.");
+		System.out.println("They see me rollin. They hatin. Trying to catch me dirty.");
+		
+		
+	}
+
+
+
+	@Override
+	public void assignPilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void hirePilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+	@Override
+	public void jetPilotInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 
 

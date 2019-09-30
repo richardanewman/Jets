@@ -1,6 +1,6 @@
 package com.skilldistillery.jets.app;
 
-public class FighterJet extends Jet implements CombatReady {
+public class FighterJet extends Jet implements CombatReady, StretchGoals {
 	
 
 
@@ -44,6 +44,35 @@ public class FighterJet extends Jet implements CombatReady {
 		if (getClass() != obj.getClass())
 			return false;
 		return true;
+	}
+
+
+	@Override
+	public void flySolo() {
+		System.out.println("Wooooohooooooo! This freaking " + getModel() + " sure is sweet! ");
+		System.out.println("But I think I might have messed myself on that last barrel roll.");
+		
+	}
+
+
+	@Override
+	public void assignPilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void hirePilot() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void jetPilotInfo() {
+		// TODO Auto-generated method stub
+		
 	}
 
 

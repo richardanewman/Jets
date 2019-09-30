@@ -302,10 +302,22 @@ public class JetsApplication {
 				removeJet();
 				break;
 			case 9:
-				System.out.println("Goodbye!");
-				break;
+				System.out.println("Eagles 1-9! Eagle 1-9! Hold it right there. Super secret cable incoming.");
+				System.out.println("Message reads: The chair is against the wall. I say again, the chair is against the wall.");
+				System.out.println("\"Wright\" you are, Sir! \"Wright\" you are! But the year can't be wrong.");
+				System.out.println("If this is above your paygrade, enter 9 to exit. Super secret squirrels enter secret code:");
+				int secret = 0;
+				secret = scanner.nextInt();
+				if (secret == 1903) {
+					superSecretMenu();
+					break;
+				}else if (secret == 9){
+					System.out.println("Goodbye!");
+					break;
+				}
 			default:
 				System.out.println("You have entered an invalid choice, please re-enter your choice: ");
+				selection = scanner.nextInt();
 				break;
 			}
 
@@ -345,7 +357,67 @@ public class JetsApplication {
 	}
 
 	
-	
+	//Stretch Goals
+	private void superSecretMenu() {
+		System.out.println();
+		System.out.println("******************************************************************");
+		System.out.println("*                       Super Secret Menu                        *");
+		System.out.println("******************************************************************");
+		System.out.println("* Please enter a number (1-3) & press enter to select an option  *");
+		System.out.println("* 1. Fly Solo                                                    *");
+		System.out.println("* 2. TODO                                                        *");
+		System.out.println("* 3. TODO                                                        *");
+		System.out.println("* 4. Return to main menu                                         *");
+		System.out.println("* 5. Quit                                                        *");
+		System.out.println("******************************************************************");
+		scanner = new Scanner(System.in);
+		int selection = scanner.nextInt();
+		switch (selection) {
+		case 1:
+			flyingSolo();
+			break;
+		case 2:
+			//TODO
+			break;
+		case 3:
+			//TODO
+			break;
+		case 4:
+			displayUserMenu();
+			break;
+		case 5:
+			break;
+		default:
+			System.out.println("You have entered an invalid choice, please re-enter your choice: ");
+			selection = scanner.nextInt();
+			break;
+		}
+	}
+
+		
+		
+	private void flyingSolo() {
+		List<Jet> getJets = airField.getJets();
+		System.out.println("Here is the current list of jets in our fleet.\n");
+			for (int i=0; i<getJets.size(); i++) {
+				System.out.print(i + " ");
+				System.out.println(getJets.get(i));
+			}
+			System.out.println("\nPlease enter the corresponding number of the jet you would like to fly.");
+			int fly = scanner.nextInt();
+			Jet flyBoy = getJets.get(fly);
+			if (flyBoy instanceof FighterJet) {
+				((FighterJet) flyBoy).flySolo();
+			}
+			if (flyBoy instanceof CargoPlane) {
+				((CargoPlane) flyBoy).flySolo();
+			}
+			if (flyBoy instanceof JetImpl) {
+				((JetImpl) flyBoy).flySolo();
+			}
+			superSecretMenu();
+		
+	}
 	
 	
 
