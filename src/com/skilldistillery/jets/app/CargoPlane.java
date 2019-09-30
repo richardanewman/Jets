@@ -18,11 +18,13 @@ public class CargoPlane extends Jet implements CargoCarrier {
 
 	@Override
 	public void fly() {
-		System.out.println("Sir, cargo plane " + getModel() + " is in the air.");
+		System.out.println("\nSir, cargo plane " + getModel() + " is in the air.");
 		double time = getRange()/getSpeed();
 		System.out.printf("Flight time for " + getModel() + " is %.2f", time);
-		System.out.println(" hours without a reserve tank." );
-
+		System.out.println("hours, which covers a range of " + getRange());
+		System.out.println("hours without a reserve tank." );
+		System.out.println(getModel() + " flies at " + getSpeed() + " MPH or Mach " + getSpeedInMach(getSpeed()) + ".");
+		System.out.println("Average cost for this aircraft is $" + getPrice());
 	}
 
 

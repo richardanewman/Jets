@@ -7,3 +7,4 @@ FighterJet, F-14 Tomcat, 1570.0, 2300, 134000000
 CargoPlane, C-500, 234.0, 4321, 32000000
 JetImpl, Cessna 172, 134.0, 1000, 132000
 FighterJet, F-15 Eagle, 2154.0, 2389, 143000000
+FighterJet, A-10 Thunderbolt, 518.0, 2580, 45000000
